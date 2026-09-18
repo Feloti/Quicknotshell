@@ -1,0 +1,1155 @@
+.
+├── assets
+│   ├── icons
+│   │   ├── ai-openai-symbolic.svg -> openai-symbolic.svg
+│   │   ├── arch-symbolic.svg
+│   │   ├── cachyos-symbolic.svg
+│   │   ├── cloudflare-dns-symbolic.svg
+│   │   ├── crosshair-symbolic.svg
+│   │   ├── debian-symbolic.svg
+│   │   ├── deepseek-symbolic.svg
+│   │   ├── desktop-symbolic.svg
+│   │   ├── endeavouros-symbolic.svg
+│   │   ├── fedora-symbolic.svg
+│   │   ├── flatpak-symbolic.svg
+│   │   ├── fluent
+│   │   │   ├── add-filled.svg
+│   │   │   ├── add.svg
+│   │   │   ├── alert-filled.svg
+│   │   │   ├── alert-off-filled.svg
+│   │   │   ├── alert-off.svg
+│   │   │   ├── alert-snooze-filled.svg
+│   │   │   ├── alert-snooze.svg
+│   │   │   ├── alert.svg
+│   │   │   ├── app-generic-filled.svg
+│   │   │   ├── app-generic.svg
+│   │   │   ├── apps-filled.svg
+│   │   │   ├── apps.svg
+│   │   │   ├── arrow-clockwise-filled.svg
+│   │   │   ├── arrow-clockwise.svg
+│   │   │   ├── arrow-counterclockwise-filled.svg
+│   │   │   ├── arrow-counterclockwise.svg
+│   │   │   ├── arrow-enter-left-filled.svg
+│   │   │   ├── arrow-enter-left.svg
+│   │   │   ├── arrow-left-filled.svg
+│   │   │   ├── arrow-left.svg
+│   │   │   ├── arrow-right-filled.svg
+│   │   │   ├── arrow-right.svg
+│   │   │   ├── arrow-sync.svg
+│   │   │   ├── arrow-up-left-filled.svg
+│   │   │   ├── arrow-up-left.svg
+│   │   │   ├── auto-filled.svg
+│   │   │   ├── auto.svg
+│   │   │   ├── battery-0.svg
+│   │   │   ├── battery-1.svg
+│   │   │   ├── battery-2.svg
+│   │   │   ├── battery-3.svg
+│   │   │   ├── battery-4.svg
+│   │   │   ├── battery-5.svg
+│   │   │   ├── battery-6.svg
+│   │   │   ├── battery-7.svg
+│   │   │   ├── battery-8.svg
+│   │   │   ├── battery-9.svg
+│   │   │   ├── battery-charge.svg
+│   │   │   ├── battery-full.svg
+│   │   │   ├── battery-saver.svg
+│   │   │   ├── battery-warning.svg
+│   │   │   ├── bluetooth-connected-filled.svg
+│   │   │   ├── bluetooth-connected.svg
+│   │   │   ├── bluetooth-disabled-filled.svg
+│   │   │   ├── bluetooth-disabled.svg
+│   │   │   ├── bluetooth-filled.svg
+│   │   │   ├── bluetooth-searching.svg
+│   │   │   ├── bluetooth.svg
+│   │   │   ├── calculator-filled.svg
+│   │   │   ├── calculator.svg
+│   │   │   ├── calendar-add-filled.svg
+│   │   │   ├── calendar-add.svg
+│   │   │   ├── camera-filled.svg
+│   │   │   ├── camera.svg
+│   │   │   ├── caret-down-filled.svg
+│   │   │   ├── caret-down.svg
+│   │   │   ├── caret-up-filled.svg
+│   │   │   ├── caret-up.svg
+│   │   │   ├── checkmark-filled.svg
+│   │   │   ├── checkmark.svg
+│   │   │   ├── chevron-down-filled.svg
+│   │   │   ├── chevron-down.svg
+│   │   │   ├── chevron-left-filled.svg
+│   │   │   ├── chevron-left.svg
+│   │   │   ├── chevron-right-filled.svg
+│   │   │   ├── chevron-right.svg
+│   │   │   ├── chevron-up-filled.svg
+│   │   │   ├── chevron-up.svg
+│   │   │   ├── cloudflare-filled.svg -> ../cloudflare-dns-symbolic.svg
+│   │   │   ├── cloudflare.svg -> ../cloudflare-dns-symbolic.svg
+│   │   │   ├── corporation.svg
+│   │   │   ├── crop-filled.svg
+│   │   │   ├── crop.svg
+│   │   │   ├── cut-filled.svg
+│   │   │   ├── cut.svg
+│   │   │   ├── dark-theme-filled.svg
+│   │   │   ├── dark-theme.svg
+│   │   │   ├── desktop-filled.svg
+│   │   │   ├── desktop-speaker-filled.svg
+│   │   │   ├── desktop-speaker.svg
+│   │   │   ├── desktop.svg
+│   │   │   ├── device-eq-filled.svg
+│   │   │   ├── device-eq.svg
+│   │   │   ├── dismiss.svg
+│   │   │   ├── drink-coffee-filled.svg
+│   │   │   ├── drink-coffee.svg
+│   │   │   ├── empty.svg
+│   │   │   ├── ethernet-filled.svg
+│   │   │   ├── ethernet.svg
+│   │   │   ├── eyedropper-filled.svg
+│   │   │   ├── eyedropper.svg
+│   │   │   ├── eye-filled.svg
+│   │   │   ├── eye-off-filled.svg
+│   │   │   ├── eye-off.svg
+│   │   │   ├── eye.svg
+│   │   │   ├── fire-filled.svg
+│   │   │   ├── fire.svg
+│   │   │   ├── flash-off-filled.svg
+│   │   │   ├── flash-off.svg
+│   │   │   ├── flash-on-filled.svg
+│   │   │   ├── flash-on.svg
+│   │   │   ├── games-filled.svg
+│   │   │   ├── games.svg
+│   │   │   ├── globe-search-filled.svg
+│   │   │   ├── globe-search.svg
+│   │   │   ├── globe-shield-filled.svg
+│   │   │   ├── globe-shield.svg
+│   │   │   ├── headphones-filled.svg
+│   │   │   ├── headphones.svg
+│   │   │   ├── image-copy-filled.svg
+│   │   │   ├── image-copy.svg
+│   │   │   ├── image-edit-filled.svg
+│   │   │   ├── image-edit.svg
+│   │   │   ├── image-filled.svg
+│   │   │   ├── image.svg
+│   │   │   ├── keyboard-dock-filled.svg
+│   │   │   ├── keyboard-dock.svg
+│   │   │   ├── keyboard-filled.svg
+│   │   │   ├── keyboard.svg
+│   │   │   ├── leaf-two-filled.svg
+│   │   │   ├── leaf-two.svg
+│   │   │   ├── library-filled.svg
+│   │   │   ├── library.svg
+│   │   │   ├── lock-closed-filled.svg
+│   │   │   ├── lock-closed.svg
+│   │   │   ├── lock-open-filled.svg
+│   │   │   ├── lock-open.svg
+│   │   │   ├── mic-filled.svg
+│   │   │   ├── mic-off-filled.svg
+│   │   │   ├── mic-off.svg
+│   │   │   ├── mic-on.svg
+│   │   │   ├── mic.svg
+│   │   │   ├── more-horizontal-filled.svg
+│   │   │   ├── more-horizontal.svg
+│   │   │   ├── music-note-2-filled.svg
+│   │   │   ├── music-note-2.svg
+│   │   │   ├── news-filled.svg
+│   │   │   ├── news.svg
+│   │   │   ├── next-filled.svg
+│   │   │   ├── next.svg
+│   │   │   ├── open-filled.svg
+│   │   │   ├── open.svg
+│   │   │   ├── options-filled.svg
+│   │   │   ├── options.svg
+│   │   │   ├── pause-filled.svg
+│   │   │   ├── pause.svg
+│   │   │   ├── people-filled.svg
+│   │   │   ├── people-settings-filled.svg
+│   │   │   ├── people-settings.svg
+│   │   │   ├── people.svg
+│   │   │   ├── people-team-filled.svg
+│   │   │   ├── people-team.svg
+│   │   │   ├── phone-filled.svg
+│   │   │   ├── phone.svg
+│   │   │   ├── pin-off.svg
+│   │   │   ├── pin.svg
+│   │   │   ├── play-filled.svg
+│   │   │   ├── play.svg
+│   │   │   ├── power-filled.svg
+│   │   │   ├── power.svg
+│   │   │   ├── previous-filled.svg
+│   │   │   ├── previous.svg
+│   │   │   ├── README.md
+│   │   │   ├── record-filled.svg
+│   │   │   ├── record.svg
+│   │   │   ├── scan-text-filled.svg
+│   │   │   ├── scan-text.svg
+│   │   │   ├── search-visual-filled.svg
+│   │   │   ├── search-visual.svg
+│   │   │   ├── server-filled.svg
+│   │   │   ├── server.svg
+│   │   │   ├── settings-cog-multiple-filled.svg
+│   │   │   ├── settings-cog-multiple.svg
+│   │   │   ├── settings.svg
+│   │   │   ├── shield-filled.svg
+│   │   │   ├── shield-lock-filled.svg
+│   │   │   ├── shield-lock.svg
+│   │   │   ├── shield.svg
+│   │   │   ├── speaker-0.svg
+│   │   │   ├── speaker-1.svg
+│   │   │   ├── speaker-2-filled.svg
+│   │   │   ├── speaker-mute-filled.svg
+│   │   │   ├── speaker-mute.svg
+│   │   │   ├── speaker-none.svg
+│   │   │   ├── speaker-off.svg
+│   │   │   ├── speaker-settings.svg
+│   │   │   ├── speaker.svg
+│   │   │   ├── start-here-pressed.svg
+│   │   │   ├── start-here.svg
+│   │   │   ├── stop-filled.svg
+│   │   │   ├── stop.svg
+│   │   │   ├── store-microsoft-filled.svg
+│   │   │   ├── store-microsoft.svg
+│   │   │   ├── subtract-filled.svg
+│   │   │   ├── subtract.svg
+│   │   │   ├── system-search-checked-dark.svg
+│   │   │   ├── system-search-checked-light.svg
+│   │   │   ├── system-search-dark.svg
+│   │   │   ├── system-search-light.svg
+│   │   │   ├── task-view-dark.svg
+│   │   │   ├── task-view-light.svg
+│   │   │   ├── task-view-pressed-dark.svg
+│   │   │   ├── task-view-pressed-light.svg
+│   │   │   ├── temperature-filled.svg
+│   │   │   ├── temperature.svg
+│   │   │   ├── video-filled.svg
+│   │   │   ├── video.svg
+│   │   │   ├── wand-filled.svg
+│   │   │   ├── wand.svg
+│   │   │   ├── weather-moon-filled.svg
+│   │   │   ├── weather-moon-off-filled.svg
+│   │   │   ├── weather-moon-off.svg
+│   │   │   ├── weather-moon.svg
+│   │   │   ├── weather-sunny-filled.svg
+│   │   │   ├── weather-sunny.svg
+│   │   │   ├── widgets.svg
+│   │   │   ├── wifi-1-filled.svg
+│   │   │   ├── wifi-1.svg
+│   │   │   ├── wifi-2-filled.svg
+│   │   │   ├── wifi-2.svg
+│   │   │   ├── wifi-3-filled.svg
+│   │   │   ├── wifi-3.svg
+│   │   │   ├── wifi-4-filled.svg
+│   │   │   ├── wifi-4.svg
+│   │   │   ├── wifi-lock-filled.svg
+│   │   │   ├── wifi-lock.svg
+│   │   │   ├── wifi-off-filled.svg
+│   │   │   ├── wifi-off.svg
+│   │   │   ├── wifi-warning-filled.svg
+│   │   │   ├── wifi-warning.svg
+│   │   │   ├── window-shield-filled.svg
+│   │   │   └── window-shield.svg
+│   │   ├── gentoo-symbolic.svg
+│   │   ├── github-symbolic.svg
+│   │   ├── google-gemini-symbolic.svg -> spark-symbolic.svg
+│   │   ├── ii-vynx.svg
+│   │   ├── linux-symbolic.svg
+│   │   ├── microsoft-symbolic.svg
+│   │   ├── mistral-symbolic.svg
+│   │   ├── nixos-symbolic.svg
+│   │   ├── nyarch-symbolic.svg
+│   │   ├── ollama-symbolic.svg
+│   │   ├── openai-symbolic.svg
+│   │   ├── openrouter-symbolic.svg
+│   │   ├── spark-symbolic.svg
+│   │   └── ubuntu-symbolic.svg
+│   └── images
+│       └── default_wallpaper.png
+├── defaults
+│   ├── ai
+│   │   ├── prompts
+│   │   │   ├── ii-Default.md
+│   │   │   ├── ii-Imouto.md
+│   │   │   ├── NoPrompt.md
+│   │   │   ├── nyarch-Acchan.md
+│   │   │   ├── w-FourPointedSparkle.md
+│   │   │   └── w-OpenMechanicalFlower.md
+│   │   └── README.md
+│   └── themes
+│       ├── angel.json
+│       ├── angel_light.json
+│       ├── ayu.json
+│       ├── cobalt2.json
+│       ├── cursor.json
+│       ├── dracula.json
+│       ├── flexoki.json
+│       ├── frappe.json
+│       ├── github.json
+│       ├── gruvbox.json
+│       ├── kanagawa.json
+│       ├── latte.json
+│       ├── macchiato.json
+│       ├── material_ocean.json
+│       ├── matrix.json
+│       ├── mercury.json
+│       ├── mocha.json
+│       ├── nord.json
+│       ├── open_code.json
+│       ├── orng.json
+│       ├── osaka_jade.json
+│       ├── rose_pine.json
+│       ├── sakura.json
+│       ├── samurai.json
+│       ├── synthwave84.json
+│       ├── vercel.json
+│       ├── vesper.json
+│       ├── zen_burn.json
+│       └── zen_garden.json
+├── GlobalStates.qml
+├── killDialog.qml
+├── modules
+│   ├── common
+│   │   ├── Appearance.qml
+│   │   ├── BarComponentRegistry.qml
+│   │   ├── Config.qml
+│   │   ├── Directories.qml
+│   │   ├── functions
+│   │   │   ├── ColorUtils.qml
+│   │   │   ├── DateUtils.qml
+│   │   │   ├── FileUtils.qml
+│   │   │   ├── Fuzzy.qml
+│   │   │   ├── fuzzysort.js
+│   │   │   ├── LayoutUtils.qml
+│   │   │   ├── levendist.js
+│   │   │   ├── Levendist.qml
+│   │   │   ├── NotificationUtils.qml
+│   │   │   ├── ObjectUtils.qml
+│   │   │   ├── Session.qml
+│   │   │   └── StringUtils.qml
+│   │   ├── Icons.qml
+│   │   ├── Images.qml
+│   │   ├── models
+│   │   │   ├── AdaptedMaterialScheme.qml
+│   │   │   ├── AnimatedTabIndexPair.qml
+│   │   │   ├── FolderListModelWithHistory.qml
+│   │   │   ├── gCloud
+│   │   │   │   ├── GCloudApi.qml
+│   │   │   │   ├── GCloudTranslate.qml
+│   │   │   │   ├── GCloudVision.qml
+│   │   │   │   └── GCloudVisionResult.qml
+│   │   │   ├── hyprland
+│   │   │   │   └── HyprlandConfigOption.qml
+│   │   │   ├── IndexModel.qml
+│   │   │   ├── LauncherSearchResult.qml
+│   │   │   ├── NestableObject.qml
+│   │   │   └── quickToggles
+│   │   │       ├── AntiFlashbangToggle.qml
+│   │   │       ├── AudioToggle.qml
+│   │   │       ├── BluetoothToggle.qml
+│   │   │       ├── CloudflareWarpToggle.qml
+│   │   │       ├── ColorPickerToggle.qml
+│   │   │       ├── DarkModeToggle.qml
+│   │   │       ├── EasyEffectsToggle.qml
+│   │   │       ├── GameModeToggle.qml
+│   │   │       ├── IdleInhibitorToggle.qml
+│   │   │       ├── MicToggle.qml
+│   │   │       ├── MusicRecognitionToggle.qml
+│   │   │       ├── NetworkToggle.qml
+│   │   │       ├── NightLightToggle.qml
+│   │   │       ├── NotificationToggle.qml
+│   │   │       ├── OnScreenKeyboardToggle.qml
+│   │   │       ├── PowerProfilesToggle.qml
+│   │   │       ├── QuickToggleModel.qml
+│   │   │       └── ScreenSnipToggle.qml
+│   │   ├── panels
+│   │   │   └── lock
+│   │   │       ├── LockContext.qml
+│   │   │       ├── LockScreen.qml
+│   │   │       └── pam
+│   │   │           └── fprintd.conf
+│   │   ├── Persistent.qml
+│   │   ├── utils
+│   │   │   ├── GeniusLyrics.qml
+│   │   │   ├── ImageDownloaderProcess.qml
+│   │   │   ├── LrclibLyrics.qml
+│   │   │   ├── MultiTurnProcess.qml
+│   │   │   ├── ScreenshotAction.qml
+│   │   │   └── TempScreenshotProcess.qml
+│   │   └── widgets
+│   │       ├── AddressBar.qml
+│   │       ├── AddressBreadcrumb.qml
+│   │       ├── animations
+│   │       │   ├── BounceAnimation.qml
+│   │       │   ├── DelayedPropertyAnimation.qml
+│   │       │   ├── PlaceholderOpeningAnimation.qml
+│   │       │   └── TriggerAnimation.qml
+│   │       ├── AttachedFileIndicator.qml
+│   │       ├── ButtonGroup.qml
+│   │       ├── CalendarView.qml
+│   │       ├── Carousel.qml
+│   │       ├── Circle.qml
+│   │       ├── CircularProgress.qml
+│   │       ├── CliphistImage.qml
+│   │       ├── ClippedFilledCircularProgress.qml
+│   │       ├── ClippedProgressBar.qml
+│   │       ├── ColorPreviewButton.qml
+│   │       ├── ColorPreviewGrid.qml
+│   │       ├── ConfigListViewEntry.qml
+│   │       ├── ConfigListView.qml
+│   │       ├── ConfigRow.qml
+│   │       ├── ConfigSelectionArray.qml
+│   │       ├── ConfigSlider.qml
+│   │       ├── ConfigSpinBox.qml
+│   │       ├── ConfigSwitch.qml
+│   │       ├── ContentPage.qml
+│   │       ├── ContentSection.qml
+│   │       ├── ContentSubsectionLabel.qml
+│   │       ├── ContentSubsection.qml
+│   │       ├── CustomIcon.qml
+│   │       ├── DashedBorder.qml
+│   │       ├── DialogButton.qml
+│   │       ├── DialogListItem.qml
+│   │       ├── DirectoryIcon.qml
+│   │       ├── DragManager.qml
+│   │       ├── DynamicConfigSelectionArray.qml
+│   │       ├── ErrorShakeAnimation.qml
+│   │       ├── FadeLoader.qml
+│   │       ├── Favicon.qml
+│   │       ├── FileSearchImage.qml
+│   │       ├── FloatingActionButton.qml
+│   │       ├── FlowButtonGroup.qml
+│   │       ├── FocusedScrollMouseArea.qml
+│   │       ├── FullscreenPolkitWindow.qml
+│   │       ├── Graph.qml
+│   │       ├── GroupButton.qml
+│   │       ├── GroupButtonWithIcon.qml
+│   │       ├── GroupButtonWithTextField.qml
+│   │       ├── HighlightOverlay.qml
+│   │       ├── IconAndTextToolbarButton.qml
+│   │       ├── IconToolbarButton.qml
+│   │       ├── KeyboardKey.qml
+│   │       ├── LightDarkPreferenceButton.qml
+│   │       ├── LyricLine.qml
+│   │       ├── LyricScroller.qml
+│   │       ├── LyricsFlickable.qml
+│   │       ├── LyricsStatic.qml
+│   │       ├── LyricsSyllable.qml
+│   │       ├── MarqueeText.qml
+│   │       ├── MaskMultiEffect.qml
+│   │       ├── MaterialCookie.qml
+│   │       ├── MaterialLoadingIndicator.qml
+│   │       ├── MaterialMusicControls.qml
+│   │       ├── MaterialShape.qml
+│   │       ├── MaterialShapeWrappedMaterialSymbol.qml
+│   │       ├── MaterialSymbol.qml
+│   │       ├── MaterialTextArea.qml
+│   │       ├── MaterialTextField.qml
+│   │       ├── MenuButton.qml
+│   │       ├── NavigationRailButton.qml
+│   │       ├── NavigationRailExpandButton.qml
+│   │       ├── NavigationRail.qml
+│   │       ├── NavigationRailTabArray.qml
+│   │       ├── NoticeBox.qml
+│   │       ├── NotificationActionButton.qml
+│   │       ├── NotificationAppIcon.qml
+│   │       ├── NotificationGroupExpandButton.qml
+│   │       ├── NotificationGroup.qml
+│   │       ├── NotificationItem.qml
+│   │       ├── NotificationListView.qml
+│   │       ├── OptionalMaterialSymbol.qml
+│   │       ├── PagePlaceholder.qml
+│   │       ├── Pill.qml
+│   │       ├── PointingHandInteraction.qml
+│   │       ├── PointingHandLinkHover.qml
+│   │       ├── PopupToolTip.qml
+│   │       ├── RadialWaveVisualizer.qml
+│   │       ├── Revealer.qml
+│   │       ├── RippleButton.qml
+│   │       ├── RippleButtonWithIcon.qml
+│   │       ├── RippleButtonWithShape.qml
+│   │       ├── RoundCorner.qml
+│   │       ├── ScrollEdgeFade.qml
+│   │       ├── SearchHandler.qml
+│   │       ├── SecondaryTabBar.qml
+│   │       ├── SecondaryTabButton.qml
+│   │       ├── SelectionDialog.qml
+│   │       ├── SelectionGroupButton.qml
+│   │       ├── shapes
+│   │       ├── SineCookie.qml
+│   │       ├── SqueezedAnnotationStyledText.qml
+│   │       ├── StyledBlurEffect.qml
+│   │       ├── StyledComboBox.qml
+│   │       ├── StyledDropShadow.qml
+│   │       ├── StyledFlickable.qml
+│   │       ├── StyledImage.qml
+│   │       ├── StyledIndeterminateProgressBar.qml
+│   │       ├── StyledListView.qml
+│   │       ├── StyledProgressBar.qml
+│   │       ├── StyledRadioButton.qml
+│   │       ├── StyledRectangle.qml
+│   │       ├── StyledRectangularShadow.qml
+│   │       ├── StyledScrollBar.qml
+│   │       ├── StyledSlider.qml
+│   │       ├── StyledSpinBox.qml
+│   │       ├── StyledSwitch.qml
+│   │       ├── StyledTextArea.qml
+│   │       ├── StyledTextInput.qml
+│   │       ├── StyledText.qml
+│   │       ├── StyledToolTipContent.qml
+│   │       ├── StyledToolTip.qml
+│   │       ├── ThumbnailImage.qml
+│   │       ├── ToolbarButton.qml
+│   │       ├── ToolbarPairedFab.qml
+│   │       ├── Toolbar.qml
+│   │       ├── ToolbarTabBar.qml
+│   │       ├── ToolbarTabButton.qml
+│   │       ├── ToolbarTextField.qml
+│   │       ├── TransitionImage.qml
+│   │       ├── transitions
+│   │       │   ├── Crossfade.qml
+│   │       │   ├── Diamond.qml
+│   │       │   ├── Outer.qml
+│   │       │   ├── Radial.qml
+│   │       │   ├── Slash.qml
+│   │       │   ├── Wave.qml
+│   │       │   └── Wipe.qml
+│   │       ├── VerticalButtonGroup.qml
+│   │       ├── VibrantToolbarButton.qml
+│   │       ├── WaveVisualizer.qml
+│   │       ├── WavyLine.qml
+│   │       ├── WeekRow.qml
+│   │       ├── widgetCanvas
+│   │       │   ├── AbstractOverlayWidget.qml
+│   │       │   ├── AbstractWidget.qml
+│   │       │   └── WidgetCanvas.qml
+│   │       ├── WindowDialogButtonRow.qml
+│   │       ├── WindowDialogParagraph.qml
+│   │       ├── WindowDialog.qml
+│   │       ├── WindowDialogSectionHeader.qml
+│   │       ├── WindowDialogSeparator.qml
+│   │       ├── WindowDialogSlider.qml
+│   │       └── WindowDialogTitle.qml
+│   ├── ii
+│   │   ├── background
+│   │   │   ├── Background.qml
+│   │   │   ├── FloatingArtBackground.qml
+│   │   │   ├── MediaModeCoverArt.qml
+│   │   │   ├── MediaMode.qml
+│   │   │   └── widgets
+│   │   │       ├── AbstractBackgroundWidget.qml
+│   │   │       ├── clock
+│   │   │       │   ├── ClockText.qml
+│   │   │       │   ├── ClockWidget.qml
+│   │   │       │   ├── CookieClock.qml
+│   │   │       │   ├── CookieQuote.qml
+│   │   │       │   ├── dateIndicator
+│   │   │       │   │   ├── BubbleDate.qml
+│   │   │       │   │   ├── DateIndicator.qml
+│   │   │       │   │   ├── RectangleDate.qml
+│   │   │       │   │   └── RotatingDate.qml
+│   │   │       │   ├── DigitalClock.qml
+│   │   │       │   ├── HourHand.qml
+│   │   │       │   ├── HourMarks.qml
+│   │   │       │   ├── MinuteHand.qml
+│   │   │       │   ├── minuteMarks
+│   │   │       │   │   ├── BigHourNumbers.qml
+│   │   │       │   │   ├── Dots.qml
+│   │   │       │   │   ├── Lines.qml
+│   │   │       │   │   └── MinuteMarks.qml
+│   │   │       │   ├── SecondHand.qml
+│   │   │       │   └── TimeColumn.qml
+│   │   │       ├── media
+│   │   │       │   └── MediaWidget.qml
+│   │   │       └── weather
+│   │   │           └── WeatherWidget.qml
+│   │   ├── bar
+│   │   │   ├── ActiveWindow.qml
+│   │   │   ├── BarComponent.qml
+│   │   │   ├── BarContent.qml
+│   │   │   ├── BarGroup.qml
+│   │   │   ├── Bar.qml
+│   │   │   ├── BatteryIndicator.qml
+│   │   │   ├── BatteryPopup.qml
+│   │   │   ├── cards
+│   │   │   │   ├── HeroCard.qml
+│   │   │   │   ├── HourlyForecast.qml
+│   │   │   │   ├── InDayForecast.qml
+│   │   │   │   ├── InfoPill.qml
+│   │   │   │   ├── LoadingPlaceholder.qml
+│   │   │   │   ├── LocalSendPill.qml
+│   │   │   │   ├── LocalSendSendCard.qml
+│   │   │   │   ├── LocalSendTransferCard.qml
+│   │   │   │   ├── MetricCard.qml
+│   │   │   │   ├── MetricsGrid.qml
+│   │   │   │   ├── ResourceCard.qml
+│   │   │   │   └── SectionCard.qml
+│   │   │   ├── CircleUtilButton.qml
+│   │   │   ├── ClockWidgetPopup.qml
+│   │   │   ├── ClockWidget.qml
+│   │   │   ├── DashboardPanelButton.qml
+│   │   │   ├── HyprlandXkbIndicator.qml
+│   │   │   ├── MediaPopup.qml
+│   │   │   ├── Media.qml
+│   │   │   ├── NetworkSpeedPopup.qml
+│   │   │   ├── NetworkSpeed.qml
+│   │   │   ├── NotificationUnreadCount.qml
+│   │   │   ├── PoliciesPanelButton.qml
+│   │   │   ├── RecordIndicator.qml
+│   │   │   ├── Resource.qml
+│   │   │   ├── ResourcesPopup.qml
+│   │   │   ├── Resources.qml
+│   │   │   ├── ScreenShareIndicator.qml
+│   │   │   ├── ScrollHint.qml
+│   │   │   ├── StyledPopupHeaderRow.qml
+│   │   │   ├── StyledPopup.qml
+│   │   │   ├── StyledPopupValueRow.qml
+│   │   │   ├── SysTrayItem.qml
+│   │   │   ├── SysTrayMenuEntry.qml
+│   │   │   ├── SysTrayMenu.qml
+│   │   │   ├── SysTray.qml
+│   │   │   ├── TimerWidget.qml
+│   │   │   ├── UtilButtons.qml
+│   │   │   ├── VerticalDashboardPanelButton.qml
+│   │   │   ├── weather
+│   │   │   │   ├── WeatherBar.qml
+│   │   │   │   └── WeatherPopup.qml
+│   │   │   └── Workspaces.qml
+│   │   ├── cheatsheet
+│   │   │   ├── CheatsheetKeybindsCategory.qml
+│   │   │   ├── CheatsheetKeybinds.qml
+│   │   │   ├── CheatsheetPeriodicTable.qml
+│   │   │   ├── Cheatsheet.qml
+│   │   │   ├── CheatsheetTimetable.qml
+│   │   │   ├── ElementTile.qml
+│   │   │   └── periodic_table.js
+│   │   ├── dock
+│   │   │   ├── DockActionButton.qml
+│   │   │   ├── DockAppButton.qml
+│   │   │   ├── DockAppIndicator.qml
+│   │   │   ├── DockContent.qml
+│   │   │   ├── DockContextMenu.qml
+│   │   │   ├── DockFileButton.qml
+│   │   │   ├── DockFileContextMenu.qml
+│   │   │   ├── DockMediaWidget.qml
+│   │   │   ├── DockMenuButton.qml
+│   │   │   ├── Dock.qml
+│   │   │   └── widgets
+│   │   │       ├── DockAppIcon.qml
+│   │   │       ├── DockButton.qml
+│   │   │       ├── DockContextMenuBase.qml
+│   │   │       ├── DockDragGhost.qml
+│   │   │       ├── DockIcon.qml
+│   │   │       ├── DockListView.qml
+│   │   │       ├── DockMediaButton.qml
+│   │   │       ├── DockPreviewPopup.qml
+│   │   │       ├── DockSeparator.qml
+│   │   │       ├── DockTooltip.qml
+│   │   │       └── SectionSeparator.qml
+│   │   ├── fastPair
+│   │   │   └── FastPairPopup.qml
+│   │   ├── lock
+│   │   │   ├── Lock.qml
+│   │   │   ├── LockSurface.qml
+│   │   │   └── PasswordChars.qml
+│   │   ├── mediaControls
+│   │   │   ├── MediaControls.qml
+│   │   │   └── PlayerControl.qml
+│   │   ├── notificationPopup
+│   │   │   └── NotificationPopup.qml
+│   │   ├── onScreenDisplay
+│   │   │   ├── indicators
+│   │   │   │   ├── BrightnessIndicator.qml
+│   │   │   │   ├── GammaIndicator.qml
+│   │   │   │   ├── LanguageIndicator.qml
+│   │   │   │   ├── PlayerVolumeIndicator.qml
+│   │   │   │   └── VolumeIndicator.qml
+│   │   │   ├── OnScreenDisplay.qml
+│   │   │   └── OsdValueIndicator.qml
+│   │   ├── onScreenKeyboard
+│   │   │   ├── layouts.js
+│   │   │   ├── OnScreenKeyboard.qml
+│   │   │   ├── OskContent.qml
+│   │   │   └── OskKey.qml
+│   │   ├── overlay
+│   │   │   ├── crosshair
+│   │   │   │   ├── CrosshairContent.qml
+│   │   │   │   └── Crosshair.qml
+│   │   │   ├── ExtensionOverlayWidgetLoader.qml
+│   │   │   ├── floatingImage
+│   │   │   │   └── FloatingImage.qml
+│   │   │   ├── fpsLimiter
+│   │   │   │   ├── FpsLimiterContent.qml
+│   │   │   │   └── FpsLimiter.qml
+│   │   │   ├── media
+│   │   │   │   └── MediaContent.qml
+│   │   │   ├── notes
+│   │   │   │   ├── NotesContent.qml
+│   │   │   │   └── Notes.qml
+│   │   │   ├── OverlayBackground.qml
+│   │   │   ├── OverlayContent.qml
+│   │   │   ├── OverlayContext.qml
+│   │   │   ├── Overlay.qml
+│   │   │   ├── OverlayTaskbar.qml
+│   │   │   ├── OverlayWidgetDelegateChooser.qml
+│   │   │   ├── recorder
+│   │   │   │   └── Recorder.qml
+│   │   │   ├── resources
+│   │   │   │   └── Resources.qml
+│   │   │   ├── StyledOverlayWidget.qml
+│   │   │   └── volumeMixer
+│   │   │       └── VolumeMixer.qml
+│   │   ├── overview
+│   │   │   ├── Overview.qml
+│   │   │   ├── OverviewWidget.qml
+│   │   │   ├── OverviewWindow.qml
+│   │   │   ├── ScrollingOverviewWidget.qml
+│   │   │   ├── SearchBar.qml
+│   │   │   ├── SearchItem.qml
+│   │   │   └── SearchWidget.qml
+│   │   ├── polkit
+│   │   │   ├── PolkitContent.qml
+│   │   │   └── Polkit.qml
+│   │   ├── regionSelector
+│   │   │   ├── CircleSelectionDetails.qml
+│   │   │   ├── CursorGuide.qml
+│   │   │   ├── OptionsToolbar.qml
+│   │   │   ├── RectCornersSelectionDetails.qml
+│   │   │   ├── RegionFunctions.qml
+│   │   │   ├── RegionSelection.qml
+│   │   │   ├── RegionSelector.qml
+│   │   │   └── TargetRegion.qml
+│   │   ├── screenCorners
+│   │   │   └── ScreenCorners.qml
+│   │   ├── screenTranslator
+│   │   │   ├── ScreenTextOverlay.qml
+│   │   │   ├── ScreenTranslatorPanel.qml
+│   │   │   └── ScreenTranslator.qml
+│   │   ├── sessionScreen
+│   │   │   ├── SessionActionButton.qml
+│   │   │   └── SessionScreen.qml
+│   │   ├── settings
+│   │   │   ├── ExtensionBadge.qml
+│   │   │   ├── ExtensionCard.qml
+│   │   │   ├── ExtensionConfigPanel.qml
+│   │   │   ├── ExtensionList.qml
+│   │   │   ├── InstalledExtensionCard.qml
+│   │   │   └── InstalledExtensionList.qml
+│   │   ├── sidebarDashboard
+│   │   │   ├── bluetoothDevices
+│   │   │   │   ├── BluetoothDeviceItem.qml
+│   │   │   │   └── BluetoothDialog.qml
+│   │   │   ├── BottomWidgetGroup.qml
+│   │   │   ├── calendar
+│   │   │   │   ├── CalendarDayButton.qml
+│   │   │   │   ├── CalendarHeaderButton.qml
+│   │   │   │   ├── calendar_layout.js
+│   │   │   │   ├── CalendarPopup.qml
+│   │   │   │   └── CalendarWidget.qml
+│   │   │   ├── CenterWidgetGroup.qml
+│   │   │   ├── nightLight
+│   │   │   │   └── NightLightDialog.qml
+│   │   │   ├── notifications
+│   │   │   │   └── NotificationList.qml
+│   │   │   ├── pomodoro
+│   │   │   │   ├── PomodoroTimer.qml
+│   │   │   │   ├── PomodoroWidget.qml
+│   │   │   │   └── Stopwatch.qml
+│   │   │   ├── QuickSliders.qml
+│   │   │   ├── quickToggles
+│   │   │   │   ├── AbstractQuickPanel.qml
+│   │   │   │   ├── AndroidQuickPanel.qml
+│   │   │   │   ├── androidStyle
+│   │   │   │   │   ├── AndroidAntiFlashbangToggle.qml
+│   │   │   │   │   ├── AndroidAudioToggle.qml
+│   │   │   │   │   ├── AndroidBluetoothToggle.qml
+│   │   │   │   │   ├── AndroidCloudflareWarpToggle.qml
+│   │   │   │   │   ├── AndroidColorPickerToggle.qml
+│   │   │   │   │   ├── AndroidDarkModeToggle.qml
+│   │   │   │   │   ├── AndroidEasyEffectsToggle.qml
+│   │   │   │   │   ├── AndroidGameModeToggle.qml
+│   │   │   │   │   ├── AndroidIdleInhibitorToggle.qml
+│   │   │   │   │   ├── AndroidMicToggle.qml
+│   │   │   │   │   ├── AndroidMusicRecognition.qml
+│   │   │   │   │   ├── AndroidNetworkToggle.qml
+│   │   │   │   │   ├── AndroidNightLightToggle.qml
+│   │   │   │   │   ├── AndroidNotificationToggle.qml
+│   │   │   │   │   ├── AndroidOnScreenKeyboardToggle.qml
+│   │   │   │   │   ├── AndroidPowerProfileToggle.qml
+│   │   │   │   │   ├── AndroidQuickToggleButton.qml
+│   │   │   │   │   ├── AndroidScreenSnipToggle.qml
+│   │   │   │   │   └── AndroidToggleDelegateChooser.qml
+│   │   │   │   ├── ClassicQuickPanel.qml
+│   │   │   │   └── classicStyle
+│   │   │   │       ├── BluetoothToggle.qml
+│   │   │   │       ├── CloudflareWarp.qml
+│   │   │   │       ├── EasyEffectsToggle.qml
+│   │   │   │       ├── GameMode.qml
+│   │   │   │       ├── IdleInhibitor.qml
+│   │   │   │       ├── NetworkToggle.qml
+│   │   │   │       ├── NightLight.qml
+│   │   │   │       └── QuickToggleButton.qml
+│   │   │   ├── SidebarDashboardContent.qml
+│   │   │   ├── SidebarDashboard.qml
+│   │   │   ├── todo
+│   │   │   │   ├── TaskList.qml
+│   │   │   │   ├── TodoItemActionButton.qml
+│   │   │   │   └── TodoWidget.qml
+│   │   │   ├── volumeMixer
+│   │   │   │   ├── AudioDeviceSelectorButton.qml
+│   │   │   │   ├── VolumeDialogContent.qml
+│   │   │   │   ├── VolumeDialog.qml
+│   │   │   │   └── VolumeMixerEntry.qml
+│   │   │   └── wifiNetworks
+│   │   │       ├── WifiDialog.qml
+│   │   │       └── WifiNetworkItem.qml
+│   │   ├── sidebarPolicies
+│   │   │   ├── aiChat
+│   │   │   │   ├── AiMessageControlButton.qml
+│   │   │   │   ├── AiMessage.qml
+│   │   │   │   ├── AnnotationSourceButton.qml
+│   │   │   │   ├── MessageCodeBlock.qml
+│   │   │   │   ├── MessageTextBlock.qml
+│   │   │   │   ├── MessageThinkBlock.qml
+│   │   │   │   └── SearchQueryButton.qml
+│   │   │   ├── AiChat.qml
+│   │   │   ├── anime
+│   │   │   │   ├── BooruImage.qml
+│   │   │   │   └── BooruResponse.qml
+│   │   │   ├── Anime.qml
+│   │   │   ├── ApiCommandButton.qml
+│   │   │   ├── ApiInputBoxIndicator.qml
+│   │   │   ├── DescriptionBox.qml
+│   │   │   ├── ScrollToBottomButton.qml
+│   │   │   ├── SidebarPoliciesContent.qml
+│   │   │   ├── SidebarPolicies.qml
+│   │   │   ├── translator
+│   │   │   │   ├── LanguageSelectorButton.qml
+│   │   │   │   └── TextCanvas.qml
+│   │   │   └── Translator.qml
+│   │   ├── verticalBar
+│   │   │   ├── BatteryIndicator.qml
+│   │   │   ├── Resource.qml
+│   │   │   ├── Resources.qml
+│   │   │   ├── VerticalBarContent.qml
+│   │   │   ├── VerticalBar.qml
+│   │   │   ├── VerticalClockWidget.qml
+│   │   │   ├── VerticalDateWidget.qml
+│   │   │   ├── VerticalMedia.qml
+│   │   │   └── VerticalTimerWidget.qml
+│   │   ├── wallpaperSelector
+│   │   │   ├── ColorFilterToolbar.qml
+│   │   │   ├── ExtraOptionsToolbar.qml
+│   │   │   ├── ImageOptionsToolbar.qml
+│   │   │   ├── WallpaperDirectoryItem.qml
+│   │   │   ├── WallpaperSelectorContent.qml
+│   │   │   └── WallpaperSelector.qml
+│   │   └── wrappedFrame
+│   │       └── WrappedFrame.qml
+│   ├── settings
+│   │   ├── About.qml
+│   │   ├── AdvancedConfig.qml
+│   │   ├── BackgroundConfig.qml
+│   │   ├── BarConfig.qml
+│   │   ├── ExtensionsConfig.qml
+│   │   ├── GeneralConfig.qml
+│   │   ├── InterfaceConfig.qml
+│   │   ├── QuickConfig.qml
+│   │   └── ServicesConfig.qml
+│   └── waffle
+│       ├── actionCenter
+│       │   ├── ActionCenterContent.qml
+│       │   ├── ActionCenterContext.qml
+│       │   ├── bluetooth
+│       │   │   ├── BluetoothControl.qml
+│       │   │   └── BluetoothDeviceItem.qml
+│       │   ├── ExpandableChoiceButton.qml
+│       │   ├── HeaderRow.qml
+│       │   ├── mainPage
+│       │   │   ├── MainPageBody.qml
+│       │   │   ├── MainPageBodySliders.qml
+│       │   │   ├── MainPageBodyToggles.qml
+│       │   │   └── MainPageFooter.qml
+│       │   ├── MediaPaneContent.qml
+│       │   ├── nightLight
+│       │   │   └── NightLightControl.qml
+│       │   ├── SectionText.qml
+│       │   ├── ToggleItem.qml
+│       │   ├── toggles
+│       │   │   ├── ActionCenterToggleButton.qml
+│       │   │   ├── ActionCenterTogglesDelegateChooser.qml
+│       │   │   └── WNetworkToggle.qml
+│       │   ├── volumeControl
+│       │   │   ├── VolumeControl.qml
+│       │   │   └── VolumeEntry.qml
+│       │   ├── WaffleActionCenter.qml
+│       │   └── wifi
+│       │       ├── WifiControl.qml
+│       │       └── WWifiNetworkItem.qml
+│       ├── background
+│       │   └── WaffleBackground.qml
+│       ├── bar
+│       │   ├── AppButton.qml
+│       │   ├── BarButton.qml
+│       │   ├── BarIconButton.qml
+│       │   ├── BarMenu.qml
+│       │   ├── BarPopup.qml
+│       │   ├── BarToolTip.qml
+│       │   ├── SearchButton.qml
+│       │   ├── StartButton.qml
+│       │   ├── SystemButton.qml
+│       │   ├── tasks
+│       │   │   ├── TaskAppButton.qml
+│       │   │   ├── TaskPreview.qml
+│       │   │   ├── Tasks.qml
+│       │   │   └── WindowPreview.qml
+│       │   ├── TaskViewButton.qml
+│       │   ├── TimeButton.qml
+│       │   ├── tray
+│       │   │   ├── TrayButton.qml
+│       │   │   ├── TrayOverflowMenu.qml
+│       │   │   └── Tray.qml
+│       │   ├── UpdatesButton.qml
+│       │   ├── WaffleBarContent.qml
+│       │   ├── WaffleBar.qml
+│       │   └── WidgetsButton.qml
+│       ├── lock
+│       │   └── WaffleLock.qml
+│       ├── looks
+│       │   ├── AcrylicButton.qml
+│       │   ├── AcrylicRectangle.qml
+│       │   ├── BodyRectangle.qml
+│       │   ├── CloseButton.qml
+│       │   ├── FluentIcon.qml
+│       │   ├── FooterRectangle.qml
+│       │   ├── Looks.qml
+│       │   ├── VerticalPageIndicator.qml
+│       │   ├── WAmbientShadow.qml
+│       │   ├── WAppIcon.qml
+│       │   ├── WBarAttachedPanelContent.qml
+│       │   ├── WBorderedButton.qml
+│       │   ├── WBorderlessButton.qml
+│       │   ├── WButton.qml
+│       │   ├── WChoiceButton.qml
+│       │   ├── WFadeLoader.qml
+│       │   ├── WIcons.qml
+│       │   ├── WIndeterminateProgressBar.qml
+│       │   ├── WListView.qml
+│       │   ├── WMenuItem.qml
+│       │   ├── WMenu.qml
+│       │   ├── WMouseAreaButton.qml
+│       │   ├── WPanelIconButton.qml
+│       │   ├── WPanelPageColumn.qml
+│       │   ├── WPanelSeparator.qml
+│       │   ├── WPane.qml
+│       │   ├── WPopupToolTip.qml
+│       │   ├── WProgressBar.qml
+│       │   ├── WRectangularShadow.qml
+│       │   ├── WRectangularShadowThis.qml
+│       │   ├── WScrollBar.qml
+│       │   ├── WSlider.qml
+│       │   ├── WStackView.qml
+│       │   ├── WSwitch.qml
+│       │   ├── WTextButton.qml
+│       │   ├── WTextField.qml
+│       │   ├── WTextInput.qml
+│       │   ├── WText.qml
+│       │   ├── WTextWithFixedWidth.qml
+│       │   ├── WToolbarButton.qml
+│       │   ├── WToolbarIconButton.qml
+│       │   ├── WToolbarIconTabButton.qml
+│       │   ├── WToolbar.qml
+│       │   ├── WToolbarSeparator.qml
+│       │   ├── WToolbarTabBar.qml
+│       │   ├── WToolTipContent.qml
+│       │   ├── WToolTip.qml
+│       │   └── WUserAvatar.qml
+│       ├── notificationCenter
+│       │   ├── CalendarWidget.qml
+│       │   ├── DateHeader.qml
+│       │   ├── FocusFooter.qml
+│       │   ├── NotificationCenterContent.qml
+│       │   ├── NotificationHeaderButton.qml
+│       │   ├── NotificationPaneContent.qml
+│       │   ├── SmallBorderedIconAndTextButton.qml
+│       │   ├── SmallBorderedIconButton.qml
+│       │   ├── WaffleNotificationCenter.qml
+│       │   ├── WNotificationAppIcon.qml
+│       │   ├── WNotificationDismissAnim.qml
+│       │   ├── WNotificationGroup.qml
+│       │   └── WSingleNotification.qml
+│       ├── notificationPopup
+│       │   └── WaffleNotificationPopup.qml
+│       ├── onScreenDisplay
+│       │   ├── BrightnessOSD.qml
+│       │   ├── OSDValue.qml
+│       │   ├── VolumeOSD.qml
+│       │   └── WaffleOSD.qml
+│       ├── polkit
+│       │   ├── WafflePolkit.qml
+│       │   └── WPolkitContent.qml
+│       ├── README.md
+│       ├── screenSnip
+│       │   ├── WRectangularSelection.qml
+│       │   ├── WRegionSelectionPanel.qml
+│       │   └── WScreenSnip.qml
+│       ├── sessionScreen
+│       │   ├── PowerButton.qml
+│       │   ├── SessionScreenContent.qml
+│       │   ├── WaffleSessionScreen.qml
+│       │   └── WSessionScreenTextButton.qml
+│       ├── startMenu
+│       │   ├── SearchBar.qml
+│       │   ├── searchPage
+│       │   │   ├── SearchEntryIcon.qml
+│       │   │   ├── SearchPageContent.qml
+│       │   │   ├── SearchResultButton.qml
+│       │   │   ├── SearchResults.qml
+│       │   │   └── TagStrip.qml
+│       │   ├── StartMenuContent.qml
+│       │   ├── StartMenuContext.qml
+│       │   ├── startPage
+│       │   │   ├── AggregatedAppCategoryModel.qml
+│       │   │   ├── AllAppsGrid.qml
+│       │   │   ├── AppCategoryGrid.qml
+│       │   │   ├── BigAppGrid.qml
+│       │   │   ├── StartAppButton.qml
+│       │   │   ├── StartPageApps.qml
+│       │   │   ├── StartPageContent.qml
+│       │   │   └── StartUserButton.qml
+│       │   └── WaffleStartMenu.qml
+│       └── taskView
+│           ├── TaskViewContent.qml
+│           ├── TaskViewWindow.qml
+│           ├── TaskViewWorkspace.qml
+│           ├── WaffleTaskView.qml
+│           └── window-layout.js
+├── panelFamilies
+│   ├── IllogicalImpulseFamily.qml
+│   ├── PanelLoader.qml
+│   └── WaffleFamily.qml
+├── ReloadPopup.qml
+├── scripts
+│   ├── ai
+│   │   ├── gemini-categorize-wallpaper.sh
+│   │   ├── gemini-translate.sh
+│   │   ├── openrouter-categorize-wallpaper.sh
+│   │   └── show-installed-ollama-models.sh
+│   ├── cava
+│   │   └── raw_output_config.txt
+│   ├── colors
+│   │   ├── applycolor.sh
+│   │   ├── code
+│   │   │   └── material-code-set-color.sh
+│   │   ├── generate_colors_material.py
+│   │   ├── random
+│   │   │   ├── random_konachan_wall.sh
+│   │   │   └── random_osu_wall.sh
+│   │   ├── scheme_for_image.py
+│   │   ├── switchwall.sh
+│   │   └── terminal
+│   │       ├── kitty-theme.conf
+│   │       ├── scheme-base.json
+│   │       └── sequences.txt
+│   ├── images
+│   │   ├── find_regions.py
+│   │   ├── find-regions-venv.sh
+│   │   ├── least_busy_region.py
+│   │   ├── least-busy-region-venv.sh
+│   │   ├── text_color.py
+│   │   └── text-color-venv.sh
+│   ├── keyring
+│   │   ├── is_unlocked.sh
+│   │   ├── try_lookup.sh
+│   │   └── unlock.sh
+│   ├── lyrics
+│   │   └── genius-lyrics.js
+│   ├── musicRecognition
+│   │   └── recognize-music.sh
+│   ├── screenShare
+│   │   └── screensharestate.sh
+│   ├── thumbnails
+│   │   ├── generate-thumbnails-magick.sh
+│   │   ├── thumbgen.py
+│   │   └── thumbgen-venv.sh
+│   ├── videos
+│   │   └── record.sh
+│   ├── wallpapers
+│   │   └── extract-colors.sh
+│   └── ytmusic
+│       ├── generate-ytmusic-theme.sh
+│       └── ytmusic.css
+├── services
+│   ├── ai
+│   │   ├── AiMessageData.qml
+│   │   ├── AiModel.qml
+│   │   ├── ApiStrategy.qml
+│   │   ├── GeminiApiStrategy.qml
+│   │   ├── MistralApiStrategy.qml
+│   │   └── OpenAiApiStrategy.qml
+│   ├── Ai.qml
+│   ├── AppSearch.qml
+│   ├── Audio.qml
+│   ├── Battery.qml
+│   ├── BluetoothStatus.qml
+│   ├── Booru.qml
+│   ├── BooruResponseData.qml
+│   ├── Brightness.qml
+│   ├── CalendarService.qml
+│   ├── Cliphist.qml
+│   ├── ConflictKiller.qml
+│   ├── DateTime.qml
+│   ├── EasyEffects.qml
+│   ├── Emojis.qml
+│   ├── ExtensionAudit.qml
+│   ├── ExtensionManager.qml
+│   ├── ExtensionSearch.qml
+│   ├── ExtensionServices.qml
+│   ├── fastPairAdverts.js
+│   ├── fastPairAdverts.test.js
+│   ├── FastPair.qml
+│   ├── FirstRunExperience.qml
+│   ├── gCloud
+│   │   ├── token_from_key.py
+│   │   └── token-from-key-venv.sh
+│   ├── GlobalFocusGrab.qml
+│   ├── GoogleCloud.qml
+│   ├── hyprlandAntiFlashbangShader
+│   │   └── anti-flashbang.glsl
+│   ├── HyprlandAntiFlashbangShader.qml
+│   ├── HyprlandData.qml
+│   ├── HyprlandKeybinds.qml
+│   ├── HyprlandSettings.qml
+│   ├── HyprlandXkb.qml
+│   ├── Hyprsunset.qml
+│   ├── Idle.qml
+│   ├── KeyringStorage.qml
+│   ├── LatexRenderer.qml
+│   ├── LauncherApps.qml
+│   ├── LauncherSearch.qml
+│   ├── LocalSend.qml
+│   ├── LyricsService.qml
+│   ├── MaterialThemeLoader.qml
+│   ├── MprisController.qml
+│   ├── network
+│   │   └── WifiAccessPoint.qml
+│   ├── Network.qml
+│   ├── NetworkUsage.qml
+│   ├── Notifications.qml
+│   ├── PolkitService.qml
+│   ├── Privacy.qml
+│   ├── ResourceUsage.qml
+│   ├── SearchRegistry.qml
+│   ├── SessionWarnings.qml
+│   ├── SongRec.qml
+│   ├── SystemInfo.qml
+│   ├── TaskbarApps.qml
+│   ├── TimerService.qml
+│   ├── Todo.qml
+│   ├── Translation.qml
+│   ├── TrayService.qml
+│   ├── Updates.qml
+│   ├── Wallpapers.qml
+│   ├── Weather.qml
+│   └── Ydotool.qml
+├── settings.qml
+├── shell.qml
+├── tree.txt
+└── welcome.qml
+
+128 directories, 1025 files
