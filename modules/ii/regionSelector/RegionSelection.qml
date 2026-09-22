@@ -28,7 +28,7 @@ PanelWindow {
         bottom: true
     }
 
-    enum SnipAction { Copy, Edit, Search, CharRecognition, Record, RecordWithSound, AskAI } 
+    enum SnipAction { Copy, Edit, Search, CharRecognition, Record, RecordWithSound } 
     enum SelectionMode { RectCorners, Circle }
     enum Phase { Select, Post }
     property var action: RegionSelection.SnipAction.Copy
@@ -249,8 +249,6 @@ PanelWindow {
                 return ScreenshotAction.Action.Record;
             case RegionSelection.SnipAction.RecordWithSound:
                 return ScreenshotAction.Action.RecordWithSound;
-            case RegionSelection.SnipAction.AskAI:
-                return ScreenshotAction.Action.AskAI;
             default:
                 console.warn("[Region Selector] Unknown snip action, skipping snip.");
                 root.dismiss();
@@ -275,10 +273,7 @@ PanelWindow {
         // Adjust action
         if (root.action === RegionSelection.SnipAction.Copy || root.action === RegionSelection.SnipAction.Edit) { 
             root.action = root.mouseButton === Qt.RightButton ? RegionSelection.SnipAction.Edit : RegionSelection.SnipAction.Copy;
-        }
-        if (root.action === RegionSelection.SnipAction.Search || root.action === RegionSelection.SnipAction.AskAI) {
-            root.action = root.mouseButton === Qt.RightButton ? RegionSelection.SnipAction.AskAI : RegionSelection.SnipAction.Search;
-        }
+         }
         
         const screenshotDir = Config.options.screenSnip.savePath !== "" ? //
             Config.options.screenSnip.savePath : "";
@@ -293,10 +288,6 @@ PanelWindow {
             screenshotDir
         )
         Quickshell.execDetached(command);
-        if (root.action === RegionSelection.SnipAction.AskAI) {
-            Ai.handleClipboardAndAttach();
-            GlobalStates.policiesPanelOpen = true
-        }
         if (root.action == RegionSelection.SnipAction.Record || root.action == RegionSelection.SnipAction.RecordWithSound) {
             root.phase = RegionSelection.Phase.Post
             root.selectionMode = RegionSelection.SelectionMode.RectCorners

@@ -84,11 +84,6 @@ Singleton {
                 }
             }
 
-            property JsonObject booru: JsonObject {
-                property bool allowNsfw: false
-                property string provider: "yandere"
-            }
-
             property JsonObject hyprland: JsonObject {
                 property string layout: "dwindle"
             }

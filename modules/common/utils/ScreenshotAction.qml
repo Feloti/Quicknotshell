@@ -20,8 +20,7 @@ Singleton {
         Search,
         CharRecognition,
         Record,
-        RecordWithSound,
-        AskAI
+        RecordWithSound
     }
 
     property string imageSearchEngineBaseUrl: Config.options.search.imageSearch.imageSearchEngineBaseUrl
@@ -65,9 +64,6 @@ Singleton {
                 break;
             case ScreenshotAction.Action.Search:
                 return ["bash", "-c", `${cropInPlace} && xdg-open "${root.imageSearchEngineBaseUrl}$(${uploadAndGetUrl(screenshotPath)})" && ${cleanup}`]
-                break;
-            case ScreenshotAction.Action.AskAI:
-                return ["bash", "-c", `${cropToStdout} | wl-copy && ${cleanup}`]
                 break;
             case ScreenshotAction.Action.CharRecognition:
                 return ["bash", "-c", `${cropInPlace} && tesseract '${StringUtils.shellSingleQuoteEscape(screenshotPath)}' stdout -l $(tesseract --list-langs | awk 'NR>1{print $1}' | tr '\\n' '+' | sed 's/\\+$/\\n/') | wl-copy && ${cleanup}`]

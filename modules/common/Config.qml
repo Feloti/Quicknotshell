@@ -83,7 +83,6 @@ Singleton {
 
             property JsonObject policies: JsonObject {
                 property int ai: 1 // 0: No | 1: Yes | 2: Local
-                property int weeb: 0 // 0: No | 1: Open | 2: Closet
                 property int wallpapers: 1 // 0: No | 1: Yes
                 property int translator: 0 // 0: No | 1: Yes
             }
@@ -740,14 +739,7 @@ Singleton {
                     property bool textFadeIn: false
                     property bool showProviderAndModelButtons: true
                 }
-                property JsonObject booru: JsonObject {
-                    property bool allowNsfw: false
-                    property string defaultProvider: "yandere"
-                    property int limit: 20
-                    property JsonObject zerochan: JsonObject {
-                        property string username: "[unset]"
-                    }
-                }
+                
                 property JsonObject cornerOpen: JsonObject {
                     property bool enable: false
                     property bool bottom: false

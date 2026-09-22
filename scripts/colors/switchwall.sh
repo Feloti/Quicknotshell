@@ -158,54 +158,6 @@ set_thumbnail_path() {
     fi
 }
 
-categorize_wallpaper() {
-    local target_payload="$1"
-
-    if [[ -z "$ai_script" || ! -f "$target_payload" ]]; then
-        return
-    fi
-
-    local wallpaper_name=$(basename "$imgpath")
-    local cache_file="$CACHE_DIR/ai-categories/$wallpaper_name.txt"
-  
-    if [ -f "$cache_file" ]; then
-    #Cache hit :) sleep for 300ms to allow the script to finish before changing clock theme
-        (
-            sleep 0.3 
-            cat "$cache_file" >"$STATE_DIR/user/generated/wallpaper/category.txt"
-        ) &
-    else
-        # Cache Miss :(
-        mkdir -p "$CACHE_DIR/ai-categories"
-        (
-            local tmp_output="/tmp/quickshell/ai/cat_verify_${wallpaper_name}.txt"
-            mkdir -p "$(dirname "$tmp_output")"
-
-            "$ai_script" "$target_payload" >"$tmp_output" 2>"$STATE_DIR/user/generated/wallpaper/ai_error.log"
-
-            # checking the output because sometimes we get garbage for some reason
-            local clean_res=$(cat "$tmp_output" | tr -d '"' | xargs | tr '[:upper:]' '[:lower:]')
-            local valid_categories=("abstract" "anime" "city" "minimalist" "landscape" "plants" "person" "space")
-            local api_success=0
-
-            for cat in "${valid_categories[@]}"; do
-                if [[ "$clean_res" == "$cat" ]]; then
-                    api_success=1
-                    break
-                fi
-            done
-
-            if [[ $api_success -eq 1 ]]; then
-                mv "$tmp_output" "$cache_file"
-                cat "$cache_file" >"$STATE_DIR/user/generated/wallpaper/category.txt"
-            else
-                rm -f "$tmp_output"
-                echo "API Failure: Invalid output structure received ($clean_res)" >>"$STATE_DIR/user/generated/wallpaper/ai_error.log"
-            fi
-        ) &
-    fi
-}
-
 switch() {
     imgpath="$1"
     mode_flag="$2"
@@ -213,19 +165,6 @@ switch() {
     color_flag="$4"
     color="$5"
     theme_file="$6"
-
-    # Start Gemini auto-categorization if enabled
-    aiStylingEnabled=$(jq -r '.background.widgets.clock.cookie.aiStyling' "$SHELL_CONFIG_FILE")
-    aiStylingModel=$(jq -r '.background.widgets.clock.cookie.aiStylingModel' "$SHELL_CONFIG_FILE")
-    ai_script=""
-
-    if [[ "$aiStylingEnabled" == "true" ]]; then
-        if [[ "$aiStylingModel" == "gemini" ]]; then  
-            ai_script="$SCRIPT_DIR/../ai/gemini-categorize-wallpaper.sh"
-        elif [[ "$aiStylingModel" == "openrouter" ]]; then  
-            ai_script="$SCRIPT_DIR/../ai/openrouter-categorize-wallpaper.sh"
-        fi
-    fi
 
     read scale screenx screeny screensizey < <(hyprctl monitors -j | jq '.[] | select(.focused) | .scale, .x, .y, .height' | xargs)
     cursorposx=$(hyprctl cursorpos -j | jq '.x' 2>/dev/null) || cursorposx=960
@@ -299,7 +238,6 @@ switch() {
                 generate_colors_material_args=(--path "$thumbnail")
                 create_restore_script "$video_path"
 
-                categorize_wallpaper "$thumbnail"
             else
                 echo "Cannot create image to colorgen"
                 remove_restore
@@ -312,7 +250,6 @@ switch() {
             set_wallpaper_path "$imgpath"
             remove_restore
 
-            categorize_wallpaper "$imgpath"
         fi
     fi
 

@@ -391,7 +391,6 @@ MouseArea {
                                         { icon: "favorite", name: Translation.tr("Favourites"), path: "FAVOURITES_MODE" }, 
                                         { icon: "", name: "---", path: "INTENTIONALLY_INVALID_DIR" }, 
                                         ...Config.options.wallpaperSelector.directories,
-                                        ...(Config.options.policies.weeb === 1 ? [{ icon: "favorite", name: Translation.tr("Homework"), path: `${Directories.pictures}/homework` }] : []),
                                     ]
                                     delegate: NavigationRailButton {
                                         id: quickDirButton
