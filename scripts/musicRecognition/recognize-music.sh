@@ -39,17 +39,18 @@ while [ "$ELAPSED" -lt "$TOTAL_DURATION" ]; do
     WAV="$TMPDIR/chunk.wav"
     rm -f "$RAW" "$WAV"
 
-    # INTERVAL saniyelik PCM kaydı al
+    # Capture audio using stdout redirection (which we know works on your system)
     timeout "$((INTERVAL + 2))" parec \
         --device="$AUDIO_DEVICE" \
         --rate=44100 --channels=2 --format=s16le \
-        --raw "$RAW" 2>/dev/null
+        --raw > "$RAW" 2>/dev/null
 
     ffmpeg -loglevel quiet -f s16le -ar 44100 -ac 2 -i "$RAW" -y "$WAV" 2>/dev/null
 
     RESULT=$(songrec recognize --json "$WAV" 2>/dev/null)
 
-    if echo "$RESULT" | grep -q '"matches": \[{' ; then
+    # Use jq to safely check for matches instead of brittle grep
+    if echo "$RESULT" | jq -e '.matches | length > 0' >/dev/null 2>&1 ; then
         echo "$RESULT"
         exit 0
     fi
