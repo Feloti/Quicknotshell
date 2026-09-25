@@ -298,33 +298,7 @@ Item {
                     text: Translation.tr("Settings")
                 }
             }
-            QuickToggleButton {
-                id: updateButton
-                toggled: confirm
-                property bool confirm: false
-                buttonIcon: confirm ? "check" : "download"
-                Timer {
-                    id: confirmTimer
-                    interval: 2000
-                    onTriggered: {
-                        confirmTimer.stop();
-                        updateButton.confirm = false
-                    }
-                }
-                onClicked: {
-                    if (confirm) {
-                        Quickshell.execDetached([Directories.cliPath, "update", "--no-confirm", "--no-backup"]);
-                        GlobalStates.sidebarRightOpen = false;
-                    } else {
-                        confirm = true
-                        confirmTimer.start()
-                    }
-                    
-                }
-                StyledToolTip {
-                    text: Translation.tr("Update the ii-vynx, make sure you have the vynx-cli installed")
-                }
-            }
+            
             QuickToggleButton {
                 toggled: false
                 buttonIcon: "power_settings_new"

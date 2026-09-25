@@ -70,7 +70,6 @@ Rectangle {
             sourceComponent: WidgetsButton {}
         }
         Tray {}
-        UpdatesButton {}
         SystemButton {}
         TimeButton {}
     }

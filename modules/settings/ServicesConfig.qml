@@ -10,7 +10,7 @@ ContentPage {
     property bool register: parent.register ?? false
     forceWidth: true
 
-    ContentSection {
+    /*ContentSection {
         icon: "neurology"
         title: Translation.tr("AI")
 
@@ -25,7 +25,7 @@ ContentPage {
                 });
             }
         }
-    }
+    }*/
 
     ContentSection {
         icon: "bluetooth_searching"
