@@ -15,7 +15,7 @@ Item { // Notification item area
     property bool expanded: false
     property bool onlyNotification: false
     property real fontSize: Appearance.font.pixelSize.small
-    property real padding: onlyNotification ? 0 : 8
+    property real padding: onlyNotification ? 0 : 12 // previous: 8
     property real summaryElideRatio: 0.85
 
     property real dragConfirmThreshold: 70 // Drag further to discard notification
