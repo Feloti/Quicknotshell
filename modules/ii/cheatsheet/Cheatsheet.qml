@@ -24,11 +24,7 @@ Scope { // Scope
         function onExtensionToggled() { root.extensionCheatsheetTabs = ExtensionManager.getContributionPoint("cheatsheet") }
     }
 
-    property var tabButtonList: [
-        {
-            "icon": "calendar_month",
-            "name": Translation.tr("Timetable")
-        },
+    property var tabButtonList: [ 
         {
             "icon": "keyboard",
             "name": Translation.tr("Keybinds")
@@ -195,7 +191,6 @@ Scope { // Scope
                             }
                         }
 
-                        CheatsheetTimetable {}
                         CheatsheetKeybinds {}
                         CheatsheetPeriodicTable {}
 
