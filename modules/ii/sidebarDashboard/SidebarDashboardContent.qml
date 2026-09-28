@@ -71,20 +71,7 @@ Item {
                 Layout.topMargin: 5
                 Layout.bottomMargin: 0
             }
-
-            Loader {
-                id: slidersLoader
-                Layout.fillWidth: true
-                visible: active
-                active: {
-                    const configQuickSliders = Config.options.sidebar.quickSliders
-                    if (!configQuickSliders.enable) return false
-                    if (!configQuickSliders.showMic && !configQuickSliders.showVolume && !configQuickSliders.showBrightness) return false;
-                    return true;
-                }
-                sourceComponent: QuickSliders {}
-            }
-
+ 
             LoaderedQuickPanelImplementation {
                 styleName: "classic"
                 sourceComponent: ClassicQuickPanel {}
