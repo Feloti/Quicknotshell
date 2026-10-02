@@ -16,6 +16,7 @@ import qs.modules.ii.overview
 import qs.modules.ii.polkit
 import qs.modules.ii.regionSelector
 import qs.modules.ii.screenCorners
+import qs.modules.ii.scriptRunner
 import qs.modules.ii.sessionScreen
 import qs.modules.ii.sidebarPolicies
 import qs.modules.ii.sidebarDashboard
@@ -57,6 +58,7 @@ Scope {
     PanelLoader { component: Polkit {} }
     PanelLoader { component: RegionSelector {} }
     PanelLoader { component: ScreenCorners {} }
+    PanelLoader { component: ScriptRunner {} }
     PanelLoader { component: SessionScreen {} }
     PanelLoader { component: SidebarPolicies {} }
     PanelLoader { component: SidebarDashboard {} }

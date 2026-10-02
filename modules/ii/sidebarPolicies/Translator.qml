@@ -69,8 +69,8 @@ Item {
             + ` '${StringUtils.shellSingleQuoteEscape(root.inputField.text.trim())}'`]
         property string buffer: ""
         stdout: SplitParser {
-            onRead: data => {
-                translateProc.buffer += data + "\n";
+            onRead: chunk => {
+                translateProc.buffer += chunk + "\n";
             }
         }
         onExited: (exitCode, exitStatus) => {
@@ -78,15 +78,15 @@ Item {
             root.translatedText = translateProc.buffer.trim();
         }
     }
-
+    /*
     Process {
         id: getLanguagesProc
         command: ["trans", "-list-languages", "-no-bidi"]
-        property list<string> bufferList: ["auto"]
+        property var bufferList: ["auto"]
         running: true
         stdout: SplitParser {
-            onRead: data => {
-                getLanguagesProc.bufferList.push(data.trim());
+            onRead: chunk => {
+                getLanguagesProc.bufferList.push(chunk.trim());
             }
         }
         onExited: (exitCode, exitStatus) => {
@@ -98,7 +98,31 @@ Item {
             root.languages = langs;
             getLanguagesProc.bufferList = []; // Clear the buffer
         }
+    }*/
+
+    Process {
+        id: getLanguagesProc
+        command: ["trans", "-list-languages", "-no-bidi"]
+        property string buffer: ""
+        running: true
+        stdout: SplitParser {
+            onRead: chunk => {
+                getLanguagesProc.buffer += chunk + "\n"
+            }
+        }
+        onExited: (exitCode, exitStatus) => {
+            // Ensure "auto" is always the first language
+            let langs = getLanguagesProc.buffer.split("\n")
+                .map(lang => lang.trim())
+                .filter(lang => lang.trim().length > 0 && lang !== "auto")
+                .sort((a, b) => a.localeCompare(b));
+            langs.unshift("auto");
+            root.languages = langs;
+            getLanguagesProc.buffer = ""; // Clear the buffer
+        }
     }
+
+
 
     ColumnLayout {
         anchors {

@@ -54,7 +54,7 @@ RippleButton {
                     anchors {
                         left: parent.left
                         leftMargin: root.elementSpacing
-                        verticalCenter: parent.verticalCenter
+                        //verticalCenter: parent.verticalCenter
                     }
                     text: root.buttonText
                     color: Appearance.colors.colOnPrimaryContainer
