@@ -10,6 +10,8 @@ import Quickshell
 Item {
     id: root
     
+    property string searchQuery: ""
+    
     StyledRectangularShadow {
         target: background
     }
@@ -57,13 +59,19 @@ Item {
             }
 
             StyledListView {
+                id: scriptListView
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 clip: true
                 spacing: 8
                 
                 model: ScriptModel {
-                    values: ScriptRunnerService.scripts
+                    values: {
+                        let allScripts = ScriptRunnerService.scripts;
+                        if (root.searchQuery.trim().length === 0) return allScripts;
+                        let q = root.searchQuery.toLowerCase();
+                        return allScripts.filter(s => s.name.toLowerCase().includes(q) || (s.description && s.description.toLowerCase().includes(q)));
+                    }
                 }
                 
                 delegate: RippleButton {
@@ -134,6 +142,78 @@ Item {
                     shape: MaterialShape.Shape.Ghostish
                     triggerAnimationOn: GlobalStates.scriptRunnerOpen
                 }
+                
+                PagePlaceholder {
+                    shown: ScriptRunnerService.scripts.length > 0 && scriptListView.count === 0
+                    icon: "search_off"
+                    title: Translation.tr("No Matches")
+                    description: Translation.tr("No scripts match your search.")
+                    shape: MaterialShape.Shape.Ghostish
+                    triggerAnimationOn: GlobalStates.scriptRunnerOpen
+                }
+            }
+
+            Rectangle {
+                Layout.fillWidth: true
+                implicitHeight: searchField.implicitHeight
+                color: Appearance.colors.colLayer1
+                radius: Appearance.rounding.full
+                border.width: 1
+                border.color: searchField.activeFocus ? Appearance.colors.colPrimary : "transparent"
+
+                Behavior on border.color {
+                    animation: Appearance.animation.elementMoveFast.colorAnimation.createObject(this)
+                }
+                
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.leftMargin: 12
+                    spacing: 0
+                    
+                    MaterialSymbol {
+                        text: "search"
+                        iconSize: Appearance.font.pixelSize.larger
+                        color: searchField.activeFocus ? Appearance.colors.colPrimary : Appearance.colors.colSubtext
+                    }
+                    
+                    ToolbarTextField {
+                        id: searchField
+                        Layout.fillWidth: true
+                        colBackground: "transparent"
+                        placeholderText: Translation.tr("Search scripts...")
+                        onTextChanged: root.searchQuery = text
+                        
+                        Keys.onPressed: event => {
+                            if (event.key === Qt.Key_Escape && text.length > 0) {
+                                text = "";
+                                event.accepted = true;
+                            } else if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+                                if (scriptListView.count > 0) {
+                                    let allScripts = ScriptRunnerService.scripts;
+                                    let q = root.searchQuery.toLowerCase();
+                                    let filtered = allScripts.filter(s => s.name.toLowerCase().includes(q) || (s.description && s.description.toLowerCase().includes(q)));
+                                    if (filtered.length > 0) {
+                                        ScriptRunnerService.execute(filtered[0].path);
+                                        GlobalStates.scriptRunnerOpen = false;
+                                    }
+                                }
+                                event.accepted = true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    Connections {
+        target: GlobalStates
+        function onScriptRunnerOpenChanged() {
+            if (!GlobalStates.scriptRunnerOpen) {
+                searchField.text = "";
+                root.searchQuery = "";
+            } else {
+                searchField.forceActiveFocus();
             }
         }
     }
